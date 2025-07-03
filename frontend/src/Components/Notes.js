@@ -7,7 +7,7 @@ const Notes = () => {
 
   useEffect(() => {
     const fetchNotes = async () => {
-      const res = await fetch("http://localhost:5000/api/chat/notes", {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/chat/notes`, {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

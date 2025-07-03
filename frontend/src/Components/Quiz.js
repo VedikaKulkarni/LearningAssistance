@@ -11,7 +11,7 @@ const Quiz = () => {
     setQuizStarted(true);
     setShowAnswers({});
     try {
-      const res = await fetch('http://localhost:5000/api/quiz/generate-quiz', {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/quiz/generate-quiz`, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },
