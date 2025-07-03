@@ -76,7 +76,7 @@ export default function Signin() {
         <p className="mt-4 text-sm text-center text-green-300">
           Don’t have an account?{' '}
           <span
-            onClick={() => navigate('/signup')}
+            onClick={() => navigate('/')}
             className="text-green-400 font-semibold cursor-pointer hover:underline"
           >
             Sign Up
